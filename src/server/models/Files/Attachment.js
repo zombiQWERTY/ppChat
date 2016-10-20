@@ -7,7 +7,7 @@ const AttachmentSchema = new mongoose.Schema({
   url: {
     type:     String
   },
-  filetype: {
+  contentType: {
     type:     String
   },
   filename: {
