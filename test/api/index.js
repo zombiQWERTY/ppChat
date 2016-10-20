@@ -17,5 +17,4 @@ describe('Routes', () => {
   });
 
   routes.auth(request);
-  routes.adminArea(request);
 });

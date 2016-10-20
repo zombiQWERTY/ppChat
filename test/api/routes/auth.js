@@ -17,19 +17,14 @@ export default function testUser(request) {
       const res = await request
         .post('/api/auth/register')
         .send({
-          entityName: Faker.company.companyName(),
-          INN:        Faker.random.number({
-            min: 100000000000,
-            max: 999999999999
-          }),
-          BIN:        Faker.random.number({
-            min: 1000000000000,
-            max: 9999999999999
-          }),
-          PPC:        Faker.random.number({
-            min: 100000000,
-            max: 999999999
-          }),
+          avatar:     require('mongoose').Types.ObjectId(),
+          name:       Faker.name.firstName(),
+          surname:    Faker.name.lastName(),
+          birthdate:  Faker.date.past(),
+          country:    1,
+          region:     261,
+          city:       1367,
+          login:      Faker.internet.userName(),
           email:      email,
           password:   password
         })
@@ -37,29 +32,7 @@ export default function testUser(request) {
 
       expect(res.body.token).to.exist;
       TOKEN = res.body.token;
-    });
-
-    it('should finish fake user registration', async () => {
-      const res = await request
-        .patch('/api/auth/register/finish')
-        .set({ Authorization: TOKEN })
-        .send({
-          physicalAddress:    Faker.address.streetAddress(),
-          entityAddress:      Faker.address.streetAddress(),
-          CEOName:            Faker.name.findName(),
-          base:               Faker.lorem.sentence(),
-          fullName:           Faker.name.findName(),
-          personalPhone:      Faker.phone.phoneNumber().replace(/[^a-zA-Z0-9]/g, ''),
-          officePhone:        Faker.phone.phoneNumber().replace(/[^a-zA-Z0-9]/g, ''),
-          INNDoc:             Faker.system.fileName(),
-          statuteDoc:         Faker.system.fileName(),
-          extractDoc:         Faker.system.fileName(),
-          appointingOrderDoc: Faker.system.fileName(),
-          nearestCity:        2537
-        })
-        .expect(200);
-
-      ID = res.body.companyInfo._id;
+      ID    = res.body.user._id;
     });
   });
 
@@ -75,76 +48,12 @@ export default function testUser(request) {
     });
   });
 
-  describe('Edit company', () => {
-    it('should edit company account full name', async () => {
+  describe('Edit user', () => {
+    it('should edit user account name', async () => {
       const res = await request
-        .patch('/api/company/' + ID)
+        .patch('/api/user/' + ID)
         .set({ Authorization: TOKEN })
-        .send({ fullName: Faker.name.findName() })
-        .expect(200);
-      // console.log(res.body);
-    });
-  });
-
-  describe('Rating', () => {
-    it('shouldnt star itself', async () => {
-      const res = await request
-        .patch('/api/company/' + ID + '/star')
-        .set({ Authorization: TOKEN })
-        .expect(403);
-      // console.log(res.body);
-    });
-
-    it('shouldnt unstar itself', async () => {
-      const res = await request
-        .patch('/api/company/' + ID + '/unstar')
-        .set({ Authorization: TOKEN })
-        .expect(403);
-      // console.log(res.body);
-    });
-  });
-
-  describe('Services', () => {
-    let SERVICE_ID;
-
-    it('should add service', async () => {
-      const res = await request
-        .put('/api/service')
-        .set({ Authorization: TOKEN })
-        .send({
-          serviceName: Faker.company.companyName(),
-          title: Faker.lorem.sentence(),
-          description: Faker.lorem.paragraph(),
-          address: Faker.address.streetAddress(),
-          phone: Faker.random.number(),
-          email: Faker.internet.email(),
-          nearestCity: 2537,
-          coords: {
-            lat: Faker.address.latitude(),
-            lng: Faker.address.longitude()
-          },
-          logo: Faker.image.business(),
-        })
-        .expect(200);
-
-      SERVICE_ID = res.body.service._id;
-    });
-
-    it('should remove service', async () => {
-      const res = await request
-        .delete('/api/service/' + SERVICE_ID)
-        .set({ Authorization: TOKEN })
-        .expect(200);
-      // console.log(res.body);
-    });
-
-    it('should edit service', async () => {
-      const res = await request
-        .patch('/api/service/' + SERVICE_ID)
-        .set({ Authorization: TOKEN })
-        .send({
-          serviceName: Faker.company.companyName()
-        })
+        .send({ name: Faker.name.firstName() })
         .expect(200);
       // console.log(res.body);
     });
