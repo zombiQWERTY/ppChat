@@ -16,5 +16,6 @@ describe('Routes', () => {
     await connectDatabase(test);
   });
 
+  routes.geo(request);
   routes.auth(request);
 });

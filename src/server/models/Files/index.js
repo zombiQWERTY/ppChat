@@ -1,3 +1,5 @@
-import User from './User';
+import UserPic    from './UserPic';
+import ChannelPic from './ChannelPic';
+import RoomPic    from './RoomPic';
 
-export default [User];
+export default [UserPic, ChannelPic, RoomPic];

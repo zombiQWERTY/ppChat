@@ -2,9 +2,9 @@ import User        from '../../../models/User/User';
 /**
  * @api {patch} /api/user/:userId Update user info
  * @apiName UpdateUser
- * @apiGroup User
+ * @apiGroup UserPic
  *
- * @apiParam {String} userId User account id
+ * @apiParam {String} userId UserPic account id
  *
  * @apiParam {Object} data Data to update
  *
@@ -25,7 +25,7 @@ async function editUser(ctx, next) {
 
     if (!user) {
       ctx.status = 404;
-      ctx.body   = { message: 'User not found' };
+      ctx.body   = { message: 'UserPic not found' };
       return;
     }
 

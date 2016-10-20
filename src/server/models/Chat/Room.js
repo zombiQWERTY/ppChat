@@ -46,8 +46,8 @@ const RoomSchema = new mongoose.Schema({
       trim:     true
     },
     attachments: {
-      type:     ObjectId,
-      ref:      'Attachments'
+      type:     [ObjectId],
+      ref:      'Attachment'
     }
   }],
   statistics: {
