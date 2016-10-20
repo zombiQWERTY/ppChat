@@ -1,0 +1,1283 @@
+[
+  {
+    "_id": 343,
+    "country": 4,
+    "regionName": "Азербайджан"
+  },
+  {
+    "_id": 344,
+    "country": 4,
+    "regionName": "Нагорный Карабах"
+  },
+  {
+    "_id": 345,
+    "country": 4,
+    "regionName": "Нахичеванская обл."
+  },
+  {
+    "_id": 1172,
+    "country": 7,
+    "regionName": "Армения"
+  },
+  {
+    "_id": 368,
+    "country": 7,
+    "regionName": "Ереванская область"
+  },
+  {
+    "_id": 369,
+    "country": 8,
+    "regionName": "Брестская обл."
+  },
+  {
+    "_id": 370,
+    "country": 8,
+    "regionName": "Витебская обл."
+  },
+  {
+    "_id": 371,
+    "country": 8,
+    "regionName": "Гомельская обл."
+  },
+  {
+    "_id": 372,
+    "country": 8,
+    "regionName": "Гродненская обл."
+  },
+  {
+    "_id": 373,
+    "country": 8,
+    "regionName": "Минская обл."
+  },
+  {
+    "_id": 374,
+    "country": 8,
+    "regionName": "Могилевская обл."
+  },
+  {
+    "_id": 499,
+    "country": 22,
+    "regionName": "Абхазия"
+  },
+  {
+    "_id": 500,
+    "country": 22,
+    "regionName": "Аджария"
+  },
+  {
+    "_id": 501,
+    "country": 22,
+    "regionName": "Грузия"
+  },
+  {
+    "_id": 502,
+    "country": 22,
+    "regionName": "Южная Осетия"
+  },
+  {
+    "_id": 1209,
+    "country": 31,
+    "regionName": "Акмолинская обл."
+  },
+  {
+    "_id": 612,
+    "country": 31,
+    "regionName": "Актюбинская обл."
+  },
+  {
+    "_id": 613,
+    "country": 31,
+    "regionName": "Алма-Атинская обл."
+  },
+  {
+    "_id": 614,
+    "country": 31,
+    "regionName": "Восточно-Казахстанская обл."
+  },
+  {
+    "_id": 615,
+    "country": 31,
+    "regionName": "Гурьевская обл."
+  },
+  {
+    "_id": 616,
+    "country": 31,
+    "regionName": "Джамбулская обл."
+  },
+  {
+    "_id": 617,
+    "country": 31,
+    "regionName": "Джезказганская обл."
+  },
+  {
+    "_id": 1196,
+    "country": 31,
+    "regionName": "Западно-Казахстанская обл."
+  },
+  {
+    "_id": 1173,
+    "country": 31,
+    "regionName": "Казахстан"
+  },
+  {
+    "_id": 618,
+    "country": 31,
+    "regionName": "Карагандинская обл."
+  },
+  {
+    "_id": 619,
+    "country": 31,
+    "regionName": "Кзыл-Ординская обл."
+  },
+  {
+    "_id": 620,
+    "country": 31,
+    "regionName": "Кокчетавская обл."
+  },
+  {
+    "_id": 621,
+    "country": 31,
+    "regionName": "Кустанайская обл."
+  },
+  {
+    "_id": 622,
+    "country": 31,
+    "regionName": "Мангышлакская обл."
+  },
+  {
+    "_id": 623,
+    "country": 31,
+    "regionName": "Павлодарская обл."
+  },
+  {
+    "_id": 624,
+    "country": 31,
+    "regionName": "Северо-Казахстанская обл."
+  },
+  {
+    "_id": 625,
+    "country": 31,
+    "regionName": "Семипалатинская обл."
+  },
+  {
+    "_id": 626,
+    "country": 31,
+    "regionName": "Талды-Курганская обл."
+  },
+  {
+    "_id": 627,
+    "country": 31,
+    "regionName": "Тургайская обл."
+  },
+  {
+    "_id": 628,
+    "country": 31,
+    "regionName": "Целиноградская обл."
+  },
+  {
+    "_id": 629,
+    "country": 31,
+    "regionName": "Чимкентская обл."
+  },
+  {
+    "_id": 646,
+    "country": 35,
+    "regionName": "Иссык-Кульская обл."
+  },
+  {
+    "_id": 647,
+    "country": 35,
+    "regionName": "Кыргызстан"
+  },
+  {
+    "_id": 648,
+    "country": 35,
+    "regionName": "Нарынская обл."
+  },
+  {
+    "_id": 649,
+    "country": 35,
+    "regionName": "Ошская обл."
+  },
+  {
+    "_id": 650,
+    "country": 35,
+    "regionName": "Таласская обл."
+  },
+  {
+    "_id": 712,
+    "country": 44,
+    "regionName": "Молдова"
+  },
+  {
+    "_id": 1197,
+    "country": 1,
+    "regionName": "Адыгея"
+  },
+  {
+    "_id": 310,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Алтайский край"
+  },
+  {
+    "_id": 759,
+    "country": 1,
+    "regionName": "Амурская обл."
+  },
+  {
+    "_id": 322,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Амурская область"
+  },
+  {
+    "_id": 760,
+    "country": 1,
+    "regionName": "Архангельская обл."
+  },
+  {
+    "_id": 265,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Архангельская область"
+  },
+  {
+    "_id": 761,
+    "country": 1,
+    "regionName": "Астраханская обл."
+  },
+  {
+    "_id": 276,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Астраханская область"
+  },
+  {
+    "_id": 762,
+    "country": 1,
+    "regionName": "Башкортостан(Башкирия)"
+  },
+  {
+    "_id": 763,
+    "country": 1,
+    "regionName": "Белгородская обл."
+  },
+  {
+    "_id": 246,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Белгородская область"
+  },
+  {
+    "_id": 764,
+    "country": 1,
+    "regionName": "Брянская обл."
+  },
+  {
+    "_id": 247,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Брянская область"
+  },
+  {
+    "_id": 765,
+    "country": 1,
+    "regionName": "Бурятия"
+  },
+  {
+    "_id": 766,
+    "country": 1,
+    "regionName": "Владимирская обл."
+  },
+  {
+    "_id": 248,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Владимирская область"
+  },
+  {
+    "_id": 767,
+    "country": 1,
+    "regionName": "Волгоградская обл."
+  },
+  {
+    "_id": 277,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Волгоградская область"
+  },
+  {
+    "_id": 768,
+    "country": 1,
+    "regionName": "Вологодская обл."
+  },
+  {
+    "_id": 267,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Вологодская область"
+  },
+  {
+    "_id": 769,
+    "country": 1,
+    "regionName": "Воронежская обл."
+  },
+  {
+    "_id": 249,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Воронежская область"
+  },
+  {
+    "_id": 771,
+    "country": 1,
+    "regionName": "Дагестан"
+  },
+  {
+    "_id": 325,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Еврейская автономная область"
+  },
+  {
+    "_id": 772,
+    "country": 1,
+    "regionName": "Еврейская обл."
+  },
+  {
+    "_id": 311,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Забайкальский край"
+  },
+  {
+    "_id": 773,
+    "country": 1,
+    "regionName": "Ивановская обл."
+  },
+  {
+    "_id": 250,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Ивановская область"
+  },
+  {
+    "_id": 774,
+    "country": 1,
+    "regionName": "Иркутская обл."
+  },
+  {
+    "_id": 313,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Иркутская область"
+  },
+  {
+    "_id": 775,
+    "country": 1,
+    "regionName": "Кабардино-Балкария"
+  },
+  {
+    "_id": 281,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Кабардино-Балкарская Республика"
+  },
+  {
+    "_id": 776,
+    "country": 1,
+    "regionName": "Калининградская обл."
+  },
+  {
+    "_id": 268,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Калининградская область"
+  },
+  {
+    "_id": 778,
+    "country": 1,
+    "regionName": "Калмыкия"
+  },
+  {
+    "_id": 779,
+    "country": 1,
+    "regionName": "Калужская обл."
+  },
+  {
+    "_id": 251,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Калужская область"
+  },
+  {
+    "_id": 780,
+    "country": 1,
+    "regionName": "Камчатская обл."
+  },
+  {
+    "_id": 319,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Камчатский край"
+  },
+  {
+    "_id": 282,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Карачаево-Черкесская Республика"
+  },
+  {
+    "_id": 781,
+    "country": 1,
+    "regionName": "Карелия"
+  },
+  {
+    "_id": 782,
+    "country": 1,
+    "regionName": "Кемеровская обл."
+  },
+  {
+    "_id": 314,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Кемеровская область"
+  },
+  {
+    "_id": 783,
+    "country": 1,
+    "regionName": "Кировская обл."
+  },
+  {
+    "_id": 293,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Кировская область"
+  },
+  {
+    "_id": 784,
+    "country": 1,
+    "regionName": "Коми"
+  },
+  {
+    "_id": 785,
+    "country": 1,
+    "regionName": "Костромская обл."
+  },
+  {
+    "_id": 252,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Костромская область"
+  },
+  {
+    "_id": 275,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Краснодарский край"
+  },
+  {
+    "_id": 312,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Красноярский край"
+  },
+  {
+    "_id": 786,
+    "country": 1,
+    "regionName": "Курганская обл."
+  },
+  {
+    "_id": 300,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Курганская область"
+  },
+  {
+    "_id": 787,
+    "country": 1,
+    "regionName": "Курская обл."
+  },
+  {
+    "_id": 253,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Курская область"
+  },
+  {
+    "_id": 269,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Ленинградская область"
+  },
+  {
+    "_id": 788,
+    "country": 1,
+    "regionName": "Липецкая обл."
+  },
+  {
+    "_id": 254,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Липецкая область"
+  },
+  {
+    "_id": 789,
+    "country": 1,
+    "regionName": "Магаданская обл."
+  },
+  {
+    "_id": 323,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Магаданская область"
+  },
+  {
+    "_id": 790,
+    "country": 1,
+    "regionName": "Марий Эл"
+  },
+  {
+    "_id": 791,
+    "country": 1,
+    "regionName": "Мордовия"
+  },
+  {
+    "_id": 792,
+    "country": 1,
+    "regionName": "Москва и Московская обл."
+  },
+  {
+    "_id": 255,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Московская область"
+  },
+  {
+    "_id": 793,
+    "country": 1,
+    "regionName": "Мурманская обл."
+  },
+  {
+    "_id": 270,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Мурманская область"
+  },
+  {
+    "_id": 266,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Ненецкий автономный округ"
+  },
+  {
+    "_id": 770,
+    "country": 1,
+    "regionName": "Нижегородская (Горьковская)"
+  },
+  {
+    "_id": 294,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Нижегородская область"
+  },
+  {
+    "_id": 794,
+    "country": 1,
+    "regionName": "Новгородская обл."
+  },
+  {
+    "_id": 271,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Новгородская область"
+  },
+  {
+    "_id": 795,
+    "country": 1,
+    "regionName": "Новосибирская обл."
+  },
+  {
+    "_id": 315,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Новосибирская область"
+  },
+  {
+    "_id": 796,
+    "country": 1,
+    "regionName": "Омская обл."
+  },
+  {
+    "_id": 316,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Омская область"
+  },
+  {
+    "_id": 797,
+    "country": 1,
+    "regionName": "Оренбургская обл."
+  },
+  {
+    "_id": 295,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Оренбургская область"
+  },
+  {
+    "_id": 798,
+    "country": 1,
+    "regionName": "Орловская обл."
+  },
+  {
+    "_id": 256,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Орловская область"
+  },
+  {
+    "_id": 799,
+    "country": 1,
+    "regionName": "Пензенская обл."
+  },
+  {
+    "_id": 296,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Пензенская область"
+  },
+  {
+    "_id": 800,
+    "country": 1,
+    "regionName": "Пермская обл."
+  },
+  {
+    "_id": 292,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Пермский край"
+  },
+  {
+    "_id": 320,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Приморский край"
+  },
+  {
+    "_id": 801,
+    "country": 1,
+    "regionName": "Псковская обл."
+  },
+  {
+    "_id": 272,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Псковская область"
+  },
+  {
+    "_id": 273,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Республика Адыгея"
+  },
+  {
+    "_id": 306,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Республика Алтай"
+  },
+  {
+    "_id": 286,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Республика Башкортостан"
+  },
+  {
+    "_id": 307,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Республика Бурятия"
+  },
+  {
+    "_id": 279,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Республика Дагестан"
+  },
+  {
+    "_id": 280,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Республика Ингушетия"
+  },
+  {
+    "_id": 274,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Республика Калмыкия"
+  },
+  {
+    "_id": 263,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Республика Карелия"
+  },
+  {
+    "_id": 264,
+    "country": 1,
+    "districtId": 29,
+    "regionName": "Республика Коми"
+  },
+  {
+    "_id": 287,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Республика Марий Эл"
+  },
+  {
+    "_id": 288,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Республика Мордовия"
+  },
+  {
+    "_id": 318,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Республика Саха (Якутия)"
+  },
+  {
+    "_id": 283,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Республика Северная Осетия-Алания"
+  },
+  {
+    "_id": 289,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Республика Татарстан"
+  },
+  {
+    "_id": 308,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Республика Тыва"
+  },
+  {
+    "_id": 309,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Республика Хакасия"
+  },
+  {
+    "_id": 802,
+    "country": 1,
+    "regionName": "Ростовская обл."
+  },
+  {
+    "_id": 278,
+    "country": 1,
+    "districtId": 30,
+    "regionName": "Ростовская область"
+  },
+  {
+    "_id": 803,
+    "country": 1,
+    "regionName": "Рязанская обл."
+  },
+  {
+    "_id": 257,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Рязанская область"
+  },
+  {
+    "_id": 804,
+    "country": 1,
+    "regionName": "Самарская обл."
+  },
+  {
+    "_id": 297,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Самарская область"
+  },
+  {
+    "_id": 805,
+    "country": 1,
+    "regionName": "Санкт-Петербург и область"
+  },
+  {
+    "_id": 806,
+    "country": 1,
+    "regionName": "Саратовская обл."
+  },
+  {
+    "_id": 298,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Саратовская область"
+  },
+  {
+    "_id": 807,
+    "country": 1,
+    "regionName": "Саха (Якутия)"
+  },
+  {
+    "_id": 808,
+    "country": 1,
+    "regionName": "Сахалин"
+  },
+  {
+    "_id": 324,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Сахалинская область"
+  },
+  {
+    "_id": 809,
+    "country": 1,
+    "regionName": "Свердловская обл."
+  },
+  {
+    "_id": 301,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Свердловская область"
+  },
+  {
+    "_id": 810,
+    "country": 1,
+    "regionName": "Северная Осетия"
+  },
+  {
+    "_id": 811,
+    "country": 1,
+    "regionName": "Смоленская обл."
+  },
+  {
+    "_id": 258,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Смоленская область"
+  },
+  {
+    "_id": 285,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Ставропольский край"
+  },
+  {
+    "_id": 812,
+    "country": 1,
+    "regionName": "Тамбовская обл."
+  },
+  {
+    "_id": 259,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Тамбовская область"
+  },
+  {
+    "_id": 813,
+    "country": 1,
+    "regionName": "Татарстан"
+  },
+  {
+    "_id": 777,
+    "country": 1,
+    "regionName": "Тверская обл."
+  },
+  {
+    "_id": 260,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Тверская область"
+  },
+  {
+    "_id": 814,
+    "country": 1,
+    "regionName": "Томская обл."
+  },
+  {
+    "_id": 317,
+    "country": 1,
+    "districtId": 34,
+    "regionName": "Томская область"
+  },
+  {
+    "_id": 815,
+    "country": 1,
+    "regionName": "Тува (Тувинская Респ.)"
+  },
+  {
+    "_id": 816,
+    "country": 1,
+    "regionName": "Тульская обл."
+  },
+  {
+    "_id": 261,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Тульская область"
+  },
+  {
+    "_id": 817,
+    "country": 1,
+    "regionName": "Тюменская обл."
+  },
+  {
+    "_id": 302,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Тюменская область"
+  },
+  {
+    "_id": 818,
+    "country": 1,
+    "regionName": "Удмуртия"
+  },
+  {
+    "_id": 290,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Удмуртская Республика"
+  },
+  {
+    "_id": 819,
+    "country": 1,
+    "regionName": "Ульяновская обл."
+  },
+  {
+    "_id": 299,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Ульяновская область"
+  },
+  {
+    "_id": 820,
+    "country": 1,
+    "regionName": "Уральская обл."
+  },
+  {
+    "_id": 321,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Хабаровский край"
+  },
+  {
+    "_id": 1200,
+    "country": 1,
+    "regionName": "Хакасия"
+  },
+  {
+    "_id": 303,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Ханты-Мансийский автономный округ - Югра"
+  },
+  {
+    "_id": 1208,
+    "country": 1,
+    "regionName": "Ханты-Мансийский АО"
+  },
+  {
+    "_id": 821,
+    "country": 1,
+    "regionName": "Челябинская обл."
+  },
+  {
+    "_id": 305,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Челябинская область"
+  },
+  {
+    "_id": 822,
+    "country": 1,
+    "regionName": "Чечено-Ингушетия"
+  },
+  {
+    "_id": 284,
+    "country": 1,
+    "districtId": 31,
+    "regionName": "Чеченская Республика"
+  },
+  {
+    "_id": 823,
+    "country": 1,
+    "regionName": "Читинская обл."
+  },
+  {
+    "_id": 824,
+    "country": 1,
+    "regionName": "Чувашия"
+  },
+  {
+    "_id": 291,
+    "country": 1,
+    "districtId": 32,
+    "regionName": "Чувашская Республика"
+  },
+  {
+    "_id": 326,
+    "country": 1,
+    "districtId": 35,
+    "regionName": "Чукотский автономный округ"
+  },
+  {
+    "_id": 1204,
+    "country": 1,
+    "regionName": "Чукотский АО"
+  },
+  {
+    "_id": 304,
+    "country": 1,
+    "districtId": 33,
+    "regionName": "Ямало-Ненецкий автономный округ"
+  },
+  {
+    "_id": 1228,
+    "country": 1,
+    "regionName": "Ямало-Ненецкий АО"
+  },
+  {
+    "_id": 825,
+    "country": 1,
+    "regionName": "Ярославская обл."
+  },
+  {
+    "_id": 262,
+    "country": 1,
+    "districtId": 28,
+    "regionName": "Ярославская область"
+  },
+  {
+    "_id": 892,
+    "country": 56,
+    "regionName": "Горно-Бадахшанская обл."
+  },
+  {
+    "_id": 893,
+    "country": 56,
+    "regionName": "Кулябская обл."
+  },
+  {
+    "_id": 894,
+    "country": 56,
+    "regionName": "Курган-Тюбинская обл."
+  },
+  {
+    "_id": 895,
+    "country": 56,
+    "regionName": "Согдийская обл."
+  },
+  {
+    "_id": 896,
+    "country": 56,
+    "regionName": "Таджикистан"
+  },
+  {
+    "_id": 1171,
+    "country": 81,
+    "regionName": "Туркмения"
+  },
+  {
+    "_id": 942,
+    "country": 61,
+    "regionName": "Андижанская обл."
+  },
+  {
+    "_id": 943,
+    "country": 61,
+    "regionName": "Бухарская обл."
+  },
+  {
+    "_id": 944,
+    "country": 61,
+    "regionName": "Джизакская обл."
+  },
+  {
+    "_id": 945,
+    "country": 61,
+    "regionName": "Каракалпакия"
+  },
+  {
+    "_id": 946,
+    "country": 61,
+    "regionName": "Кашкадарьинская обл."
+  },
+  {
+    "_id": 947,
+    "country": 61,
+    "regionName": "Навоийская обл."
+  },
+  {
+    "_id": 948,
+    "country": 61,
+    "regionName": "Наманганская обл."
+  },
+  {
+    "_id": 949,
+    "country": 61,
+    "regionName": "Самаркандская обл."
+  },
+  {
+    "_id": 950,
+    "country": 61,
+    "regionName": "Сурхандарьинская обл."
+  },
+  {
+    "_id": 951,
+    "country": 61,
+    "regionName": "Сырдарьинская обл."
+  },
+  {
+    "_id": 952,
+    "country": 61,
+    "regionName": "Ташкентская обл."
+  },
+  {
+    "_id": 953,
+    "country": 61,
+    "regionName": "Ферганская обл."
+  },
+  {
+    "_id": 954,
+    "country": 61,
+    "regionName": "Хорезмская обл."
+  },
+  {
+    "_id": 955,
+    "country": 62,
+    "regionName": "Винницкая обл."
+  },
+  {
+    "_id": 956,
+    "country": 62,
+    "regionName": "Волынская обл."
+  },
+  {
+    "_id": 957,
+    "country": 62,
+    "regionName": "Днепропетровская обл."
+  },
+  {
+    "_id": 958,
+    "country": 62,
+    "regionName": "Донецкая обл."
+  },
+  {
+    "_id": 959,
+    "country": 62,
+    "regionName": "Житомирская обл."
+  },
+  {
+    "_id": 960,
+    "country": 62,
+    "regionName": "Закарпатская обл."
+  },
+  {
+    "_id": 961,
+    "country": 62,
+    "regionName": "Запорожская обл."
+  },
+  {
+    "_id": 962,
+    "country": 62,
+    "regionName": "Ивано-Франковская обл."
+  },
+  {
+    "_id": 963,
+    "country": 62,
+    "regionName": "Киевская обл."
+  },
+  {
+    "_id": 964,
+    "country": 62,
+    "regionName": "Кировоградская обл."
+  },
+  {
+    "_id": 965,
+    "country": 62,
+    "regionName": "Крымская обл."
+  },
+  {
+    "_id": 966,
+    "country": 62,
+    "regionName": "Луганская обл."
+  },
+  {
+    "_id": 967,
+    "country": 62,
+    "regionName": "Львовская обл."
+  },
+  {
+    "_id": 968,
+    "country": 62,
+    "regionName": "Николаевская обл."
+  },
+  {
+    "_id": 969,
+    "country": 62,
+    "regionName": "Одесская обл."
+  },
+  {
+    "_id": 970,
+    "country": 62,
+    "regionName": "Полтавская обл."
+  },
+  {
+    "_id": 971,
+    "country": 62,
+    "regionName": "Ровенская обл."
+  },
+  {
+    "_id": 972,
+    "country": 62,
+    "regionName": "Сумская обл."
+  },
+  {
+    "_id": 973,
+    "country": 62,
+    "regionName": "Тернопольская обл."
+  },
+  {
+    "_id": 1174,
+    "country": 62,
+    "regionName": "Украина"
+  },
+  {
+    "_id": 974,
+    "country": 62,
+    "regionName": "Харьковская обл."
+  },
+  {
+    "_id": 975,
+    "country": 62,
+    "regionName": "Херсонская обл."
+  },
+  {
+    "_id": 976,
+    "country": 62,
+    "regionName": "Хмельницкая обл."
+  },
+  {
+    "_id": 977,
+    "country": 62,
+    "regionName": "Черкасская обл."
+  },
+  {
+    "_id": 978,
+    "country": 62,
+    "regionName": "Черниговская обл."
+  },
+  {
+    "_id": 979,
+    "country": 62,
+    "regionName": "Черновицкая обл."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "_id": 4,
+    "countryName": "Азербайджан"
+  },
+  {
+    "_id": 7,
+    "countryName": "Армения"
+  },
+  {
+    "_id": 8,
+    "countryName": "Беларусь"
+  },
+  {
+    "_id": 22,
+    "countryName": "Грузия"
+  },
+  {
+    "_id": 31,
+    "countryName": "Казахстан"
+  },
+  {
+    "_id": 35,
+    "countryName": "Киргызстан"
+  },
+  {
+    "_id": 44,
+    "countryName": "Молдова"
+  },
+  {
+    "_id": 1,
+    "countryName": "Россия"
+  },
+  {
+    "_id": 56,
+    "countryName": "Таджикистан"
+  },
+  {
+    "_id": 81,
+    "countryName": "Туркмения"
+  },
+  {
+    "_id": 61,
+    "countryName": "Узбекистан"
+  },
+  {
+    "_id": 62,
+    "countryName": "Украина"
+  }
+]
