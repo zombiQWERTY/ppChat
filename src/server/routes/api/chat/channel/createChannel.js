@@ -1,4 +1,5 @@
-import Channel from '../../../../models/Chat/Channel';
+import Channel    from '../../../../models/Chat/Channel';
+import ChannelPic from '../../../../models/Files/ChannelPic';
 import {
   isValidImage,
   imageResizer
@@ -41,6 +42,7 @@ async function createChannel(ctx, next) {
     }
   } catch (e) {
     console.log(e);
+    ctx.status = 500;
   }
 
   if (errors.length) {
@@ -56,17 +58,18 @@ async function createChannel(ctx, next) {
   data.description = receivedData.description || '';
   data.open        = typeof receivedData.open === 'boolean' ? receivedData.open : true;
 
-
   try {
-    // const channel = new Channel(data);
-    // await channel.save();
-    imageResizer(avatar.filename, avatar.path);
+    const channel        = new Channel(data);
+    const channelPicData = imageResizer(avatar.filename, avatar.path);
+    const pic            = new ChannelPic(channelPicData);
 
+    await Promise.all([channel.save(), pic.save()]);
 
     ctx.status = 200;
     ctx.body   = { message: 'Channel successfully created' };
   } catch (e) {
     console.log(e);
+    ctx.status = 500;
   }
 }
 

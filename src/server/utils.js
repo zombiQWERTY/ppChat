@@ -71,15 +71,22 @@ export function uploader() {
 export function imageResizer(filename, srcPath) {
   const sizes = Object.keys(IMAGESIZES);
 
+  let paths = {};
   let dstPath;
   sizes.forEach((size) => {
-    if (size === sizes[0]) { return; }
+    if (size === sizes[0]) {
+      paths.original = srcPath;
+      return;
+    }
 
-    dstPath = UPLOADDIRS[size] + '/' + filename;
+    dstPath     = UPLOADDIRS[size] + '/' + filename;
+    paths[size] = dstPath;
     gm(srcPath).thumb(IMAGESIZES[size], IMAGESIZES[size], dstPath, 75, function(error) {
       if (error) { throw error; }
     });
   });
+
+  return paths;
 }
 
 export function isValidImage(srcPath) {
