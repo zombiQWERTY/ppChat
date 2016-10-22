@@ -6,8 +6,10 @@ import bodyParser from 'koa-bodyparser';
 import session    from 'koa-generic-session';
 import koaQs      from 'koa-qs';
 import pug        from 'js-koa-pug';
+import koaStatic  from 'koa-static';
 
 import corsConfig from './config';
+import { PUBLIC_DIR } from '../consts';
 
 export default function middleware(app) {
   koaQs(app, 'extended');
@@ -16,6 +18,10 @@ export default function middleware(app) {
     pug(`${__dirname}/../views`),
     convert(cors(corsConfig)),
     convert(bodyParser()),
-    convert(session())
+    convert(session()),
+    convert(koaStatic(PUBLIC_DIR, {
+      gzip:  true,
+      defer: true
+    }))
   ]);
 }

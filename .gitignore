@@ -12,3 +12,5 @@ stats.json
 npm-debug.log
 logs/
 /doc
+/public/uploads/
+/tmp/

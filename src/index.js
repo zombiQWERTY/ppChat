@@ -1,5 +1,4 @@
 import 'babel-polyfill';
-import 'isomorphic-fetch';
 import app                               from './server';
 import { connectDatabase }               from './server/db';
 import { development, test, production } from './server/db/config';
@@ -10,7 +9,7 @@ const databaseConfig = process.env.NODE_ENV === 'production' ? production : deve
 (async() => {
   try {
     const info = await connectDatabase(databaseConfig);
-    console.log(`Connected to ${info.host}:${info.port}/${info.name}`);
+    console.log(`Connected to ${info.host}:${info.port}/${info.name} database`);
   } catch (error) {
     console.error('Unable to connect to database', error);
   }

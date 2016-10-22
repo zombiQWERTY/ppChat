@@ -13,9 +13,6 @@ const ChanelPicSchema = new mongoose.Schema({
   medium: {
     type:     String
   },
-  large: {
-    type:     String
-  },
   thumbnail: {
     type:     String
   }

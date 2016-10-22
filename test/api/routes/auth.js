@@ -59,6 +59,19 @@ export default function testUser(request) {
     });
   });
 
+  describe('Chat', () => {
+    it('should create new channel', async () => {
+      const res = await request
+        .post('/api/chat/channel')
+        .set({ Authorization: TOKEN })
+        .field('title', Faker.name.title())
+        .field('description', Faker.lorem.sentence())
+        .field('open', ''+Faker.random.boolean())
+        .attach('avatar', `${__dirname}/../../assets/440x320.png`)
+        .expect(200);
+    });
+  });
+
   describe('Logging out', () => {
     it('should log out current user', async () => {
       const res = await request

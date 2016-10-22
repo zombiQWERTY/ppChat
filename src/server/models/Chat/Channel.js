@@ -6,7 +6,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 const ChannelSchema = new mongoose.Schema({
   avatar: {
     type:     ObjectId,
-    ref:      'ChannelPics',
+    ref:      'ChannelPic',
     required: false
   },
   title: {
