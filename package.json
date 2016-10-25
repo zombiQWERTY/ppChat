@@ -78,7 +78,7 @@
   "scripts": {
     "start": "./bin/start.sh",
     "compile": "./bin/compile.sh",
-    "dev": "sudo ./bin/dev.sh",
+    "dev": "./bin/dev.sh",
     "deploy": "./bin/deploy.sh",
     "apidoc": "./bin/apidoc.sh",
     "test": "./bin/test.sh"

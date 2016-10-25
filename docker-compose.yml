@@ -1,10 +1,48 @@
 version: "2"
 
 services:
-  web:
-    build: .
+  file-store:
+    image: tianon/true
     volumes:
-      - './public:/app/public'
-      - './src:/app/src'
+      - files:/home/data
+
+  database-store:
+    image: tianon/true
+    volumes:
+      - mongo:/data/mongodb
+
+  db:
+    image: mongo:latest
+    command: mongod
+    links:
+      - database-store
+
+  dev:
+    build:
+      context: .
+      dockerfile: Docker/Dockerfile.dev
     ports:
-      - "9095:9095"
+      - "9095:8080"
+    command: yarn run dev
+    links:
+      - db
+      - file-store
+    volumes:
+      - .:/home/apps/app
+
+  prod:
+    build:
+      context: .
+      dockerfile: Docker/Dockerfile.prod
+    ports:
+      - "9095:8080"
+    command: yarn run start
+    links:
+      - db
+      - file-store
+
+volumes:
+  mongo:
+    driver: local
+  files:
+    driver: local
