@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt-nodejs-as-promised';
+import bcrypt from 'bcrypt-nodejs';
 import multer from 'koa-multer';
 import mkdirp from 'mkdirp';
 import md5    from 'md5';
@@ -14,12 +14,12 @@ import {
 
 export async function passwordHash(password) {
   const saltRounds = 10;
-  const salt       = await bcrypt.genSalt(saltRounds);
-  return await bcrypt.hash(password, salt);
+  const salt       = await bcrypt.genSaltSync(saltRounds);
+  return await bcrypt.hashSync(password, salt);
 }
 
 export async function passwordCompare(password, hash) {
-  return await bcrypt.compare(password, hash);
+  return await bcrypt.compareSync(password, hash);
 }
 
 export function setError(ctx, error) {

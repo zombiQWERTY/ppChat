@@ -38,3 +38,12 @@ services:
       - file-store
     volumes:
       - .:/home/apps/app
+
+  test:
+    build: .
+    command: bash -c "yarn && yarn test"
+    links:
+      - mongo
+      - file-store
+    volumes:
+      - .:/home/apps/app
