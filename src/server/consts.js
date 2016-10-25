@@ -1,6 +1,6 @@
 import mimes from './helpers/mimes';
 
-export const PUBLIC_DIR = './public';
+export const PUBLIC_DIR = '/home/data/public';
 
 export const UPLOADDIRS = {
   original:  setUploadDir('original'),

@@ -21,7 +21,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "bcrypt": "^0.8.7",
+    "bcrypt-nodejs-as-promised": "^1.0.4",
     "gm": "^1.23.0",
     "import-dir": "0.0.1",
     "js-koa-pug": "^1.0.3",
@@ -81,6 +81,9 @@
     "dev": "./bin/dev.sh",
     "deploy": "./bin/deploy.sh",
     "apidoc": "./bin/apidoc.sh",
-    "test": "./bin/test.sh"
+    "test": "./bin/test.sh",
+    "docker-prod": "docker-compose up prod",
+    "docker-dev": "docker-compose up dev",
+    "docker-test": "docker-compose up test"
   }
 }

@@ -1,5 +1,5 @@
 function setup(type) {
-  return `mongodb://localhost/ppchat_${type}`;
+  return `mongodb://mongo:27017/ppchat_${type}`;
 }
 
 export const development = setup('development');

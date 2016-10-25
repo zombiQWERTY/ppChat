@@ -4,45 +4,37 @@ services:
   file-store:
     image: tianon/true
     volumes:
-      - files:/home/data
+      - /data/public:/home/data
 
   database-store:
     image: tianon/true
     volumes:
-      - mongo:/data/mongodb
+      - /data/db:/data/db
 
-  db:
+  mongo:
     image: mongo:latest
     command: mongod
     links:
       - database-store
 
   dev:
-    build:
-      context: .
-      dockerfile: Docker/Dockerfile.dev
+    build: .
     ports:
       - "9095:8080"
-    command: yarn run dev
+    command: bash -c "yarn && yarn run dev"
     links:
-      - db
+      - mongo
       - file-store
     volumes:
       - .:/home/apps/app
 
   prod:
-    build:
-      context: .
-      dockerfile: Docker/Dockerfile.prod
+    build: .
     ports:
       - "9095:8080"
-    command: yarn run start
+    command: bash -c "yarn && yarn run start"
     links:
-      - db
+      - mongo
       - file-store
-
-volumes:
-  mongo:
-    driver: local
-  files:
-    driver: local
+    volumes:
+      - .:/home/apps/app
