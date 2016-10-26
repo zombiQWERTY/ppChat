@@ -16,6 +16,10 @@ describe('Routes', () => {
     await connectDatabase(test);
   });
 
+  after(async () => {
+
+  });
+
   // routes.geo(request);
   routes.auth(request);
 });

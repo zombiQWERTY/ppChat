@@ -5,23 +5,21 @@
 You must use yarn (https://yarnpkg.com)
 
 #### Setup
-Install MongoDB (brew update && brew install mongodb)
-```bash
-yarn
-```
+Install Docker and:
+
 #### Develop
 ```bash
-yarn run dev
+docker-compose up dev
 ```
 
 #### Prod
 ```bash
-yarn start
+docker-compose up prod
 ```
 
 #### Test
 ```bash
-yarn test
+docker-compose up test
 ```
 
 #### ApiDoc

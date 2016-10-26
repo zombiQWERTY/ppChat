@@ -66,9 +66,22 @@ export default function testUser(request) {
         .set({ Authorization: TOKEN })
         .field('title', Faker.name.title())
         .field('description', Faker.lorem.sentence())
-        .field('open', ''+Faker.random.boolean())
+        .field('open', '' + Faker.random.boolean())
         .attach('avatar', `${__dirname}/../../assets/440x320.png`)
         .expect(200);
+      // console.log(res);
+    });
+
+    it('should not create new channel', async () => {
+      const res = await request
+        .post('/api/chat/channel')
+        .set({ Authorization: TOKEN })
+        .field('title', Faker.name.title())
+        .field('description', Faker.lorem.sentence())
+        .field('open', '' + Faker.random.boolean())
+        .attach('avatar', `${__dirname}/../../assets/200x100.png`)
+        .expect(400);
+      // console.log(res);
     });
   });
 

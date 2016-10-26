@@ -71,40 +71,68 @@ export function uploader() {
 export function imageResizer(filename, srcPath) {
   const sizes = Object.keys(IMAGESIZES);
 
-  let paths = {};
   let dstPath;
-  sizes.forEach((size) => {
-    if (size === sizes[0]) {
-      paths.original = srcPath;
-      return;
-    }
 
-    dstPath     = UPLOADDIRS[size] + '/' + filename;
-    paths[size] = dstPath;
-    gm(srcPath).thumb(IMAGESIZES[size], IMAGESIZES[size], dstPath, 75, function(error) {
-      if (error) { throw error; }
+  sizes.forEach((size) => {
+    if (size === sizes[0] || size === sizes[1]) { return; }
+
+    mkdirp(UPLOADDIRS[size], function (error) {
+      if (error) { return; }
+
+      dstPath = UPLOADDIRS[size] + '/' + filename;
+      gm(srcPath)
+        .resize(IMAGESIZES[size], IMAGESIZES[size], '^')
+        .strip()
+        .gravity('Center')
+        .crop(IMAGESIZES[size], IMAGESIZES[size])
+        .interlace('Line')
+        .quality(75)
+        .compress('Lossless')
+        .write(dstPath, function (error) {
+          if (error) { throw error; }
+        });
     });
   });
-
-  return paths;
-}
-
-export function isValidImage(srcPath) {
-  let isValid = false;
-
-  gm(srcPath).size(function(error, size) {
-    if (error) { throw error; }
-
-    if (size.width < IMAGESIZES.needed || size.height < IMAGESIZES.needed) {
-      deleteFiles([srcPath]);
-      return;
-    }
-    isValid = true;
-  });
-
-  return isValid;
 }
 
 export function deleteFiles(files) {
-  del.sync(files);
+  del.sync(files, { force: true });
+}
+
+export function isValidImage(srcPath) {
+  return new Promise(function(resolve, reject) {
+    gm(srcPath).size(function(error, size) {
+      if (error) { throw error; }
+
+      const conditionMin = size.width < IMAGESIZES.needed || size.height < IMAGESIZES.needed;
+      const conditionMax = size.width > IMAGESIZES.maximum || size.height > IMAGESIZES.maximum;
+      if (conditionMin || conditionMax) {
+        deleteFiles([srcPath]);
+        reject(false);
+      }
+      if (!conditionMin && !conditionMax) {
+        gm(srcPath)
+          .strip()
+          .interlace('Line')
+          .quality(75)
+          .compress('Lossless')
+          .write(srcPath, function (error) {
+            if (error) {
+              reject(false);
+              console.error(error);
+            }
+            resolve(true);
+          });
+      }
+    });
+  });
+}
+
+export function getImagesUrl(filename) {
+  return {
+    original:  `${UPLOADDIRS.original}/${filename}`,
+    thumbnail: `${UPLOADDIRS.thumbnail}/${filename}`,
+    small:     `${UPLOADDIRS.small}/${filename}`,
+    medium:    `${UPLOADDIRS.medium}/${filename}`
+  };
 }

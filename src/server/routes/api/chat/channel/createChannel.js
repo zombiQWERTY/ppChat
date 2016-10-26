@@ -2,7 +2,8 @@ import Channel    from '../../../../models/Chat/Channel';
 import ChannelPic from '../../../../models/Files/ChannelPic';
 import {
   isValidImage,
-  imageResizer
+  imageResizer,
+  getImagesUrl
 } from '../../../../utils';
 
 /**
@@ -31,18 +32,22 @@ async function createChannel(ctx, next) {
   if (!ctx.req.file) { errors.push('avatar'); }
 
   const avatar = ctx.req.file;
+
+  let isImageValid = false;
   try {
-    if (!isValidImage(avatar.path)) {
-      ctx.status = 400;
-      ctx.body   = {
-        status: 'error',
-        message: `Avatar must be at least 250x250px.`
-      };
-      return;
-    }
+    isImageValid = await isValidImage(avatar.path);
   } catch (e) {
     console.log(e);
     ctx.status = 500;
+  }
+
+  if (!isImageValid) {
+    ctx.status = 400;
+    ctx.body   = {
+      status: 'error',
+      message: `Avatar must be at least 250x250px and lower than 1024x1024px.`
+    };
+    return;
   }
 
   if (errors.length) {
@@ -54,23 +59,41 @@ async function createChannel(ctx, next) {
     return;
   }
 
+  data.users = [{
+    info:    ctx.passport.user._id,
+    isOwner: true
+  }];
   data.title       = receivedData.title;
   data.description = receivedData.description || '';
   data.open        = typeof receivedData.open === 'boolean' ? receivedData.open : true;
 
   try {
-    const channel        = new Channel(data);
-    const channelPicData = imageResizer(avatar.filename, avatar.path);
-    const pic            = new ChannelPic(channelPicData);
-
-    await Promise.all([channel.save(), pic.save()]);
-
-    ctx.status = 200;
-    ctx.body   = { message: 'Channel successfully created' };
+    await imageResizer(avatar.filename, avatar.path);
   } catch (e) {
     console.log(e);
     ctx.status = 500;
   }
+
+  let channelAvatar;
+  try {
+    const pic = new ChannelPic(getImagesUrl(avatar.filename));
+    channelAvatar = await pic.save();
+  } catch (e) {
+    console.log(e);
+    ctx.status = 500;
+  }
+
+  try {
+    data.avatar = channelAvatar._id;
+    const channel = new Channel(data);
+    console.log(await channel.save());
+  } catch (e) {
+    console.log(e);
+    ctx.status = 500;
+  }
+
+  ctx.status = 200;
+  ctx.body   = { message: 'Channel successfully created.' };
 }
 
 export default createChannel;
