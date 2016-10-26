@@ -1,4 +1,4 @@
-import mimes from './helpers/mimes';
+import { files, images } from './helpers/mimes';
 
 export const PUBLIC_DIR = '/home/data/public';
 export const FILESDIR   = `${PUBLIC_DIR}/uploads/files`;
@@ -18,7 +18,8 @@ export const IMAGESIZES = {
   medium:    200
 };
 
-export const MIMETYPES = mimes;
+export const MIMETYPES       = files;
+export const MIMETYPESIMAGES = images;
 
 export const ERROR = 'ERROR';
 export const OK    = 'OK';

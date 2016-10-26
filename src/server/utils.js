@@ -9,7 +9,9 @@ import gm     from 'gm';
 import {
   UPLOADDIRS,
   IMAGESIZES,
-  MIMETYPES
+  MIMETYPES,
+  MIMETYPESIMAGES,
+  FILESDIR
 } from './consts';
 
 export async function passwordHash(password) {
@@ -36,13 +38,21 @@ export function setSuccess(ctx, data) {
   ctx.body   = data;
 }
 
-export function uploader() {
+export function uploader(type = 'file') {
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      return mkdirp(UPLOADDIRS.original, function (error) {
-        if (error) { return; }
-        return cb(null, UPLOADDIRS.original);
-      });
+      if (type === 'image') {
+        return mkdirp(UPLOADDIRS.original, function (error) {
+          if (error) { return; }
+          return cb(null, UPLOADDIRS.original);
+        });
+      }
+      if (type === 'file') {
+        return mkdirp(FILESDIR, function (error) {
+          if (error) { return; }
+          return cb(null, FILESDIR);
+        });
+      }
     },
     filename: (req, file, cb) => {
       const hrTime    = process.hrtime();
@@ -57,7 +67,11 @@ export function uploader() {
   const multerConfig = {
     storage,
     fileFilter: function (req, file, cb) {
-      if (MIMETYPES.includes(file.mimetype)) {
+      if (type === 'file' && MIMETYPES.includes(file.mimetype)) {
+        cb(null, true);
+        return;
+      }
+      if (type === 'image' && MIMETYPESIMAGES.includes(file.mimetype)) {
         cb(null, true);
         return;
       }

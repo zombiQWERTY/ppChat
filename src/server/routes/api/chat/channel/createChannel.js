@@ -86,7 +86,7 @@ async function createChannel(ctx, next) {
   try {
     data.avatar = channelAvatar._id;
     const channel = new Channel(data);
-    console.log(await channel.save());
+    await channel.save();
   } catch (e) {
     console.log(e);
     ctx.status = 500;
